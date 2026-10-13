@@ -2,7 +2,7 @@ gametitle=God of War 2 - PAL-M (SCES-54206)
 
 [Widescreen 16:9]
 gsaspectratio=16:9
-author=CRASHARKI & ShaolinAssassin
+author=God of War Colleccion
 description=Corrects display cropping to 16:9.
 //enable native widescreen
 patch=1,EE,002D8068,byte,01
@@ -12,8 +12,136 @@ patch=1,EE,00363210,word,3FE38E39
 //Zoom value for Hor+ by nemesis2000; ported by ShaolinAssassin
 patch=1,EE,002348A0,word,46000406
 
-
 [Skip Cutscenes]
-author=Ezedequias
+author=God of War Colleccion
 description=With Any Action Button
 patch=1,EE,002D7B24,byte,01
+
+[Conversión a pantalla panorámica a partir del hack NTSC]
+description=Conversión a pantalla panorámica a partir del hack NTSC
+author=God of War Colleccion
+patch=1,EE,202348a0,extended,46000406
+
+[Selecciona Pantalla Ancha por Default]
+description=Selecciona Pantalla Ancha por Default
+author=God of War Colleccion
+patch=1,EE,2050C846,extended,00000001
+
+[Cero Segundos]
+description=Cero Segundos
+author=God of War Colleccion
+patch=1,EE,202D8078,extended,00000000
+
+[(Press: Select) Omitir FMV]
+description=(Press: Select) Omitir FMV
+author=God of War Colleccion
+patch=1,EE,D032EE5C,extended,0000FFFE
+patch=1,EE,202AB990,extended,24020001
+patch=1,EE,D032EE5C,extended,0010FFFE
+patch=1,EE,202AB990,extended,8C620000
+
+[Salud infinita]
+description=Salud infinita
+author=God of War Colleccion
+patch=1,EE,200FFF00,extended,3C014348
+patch=1,EE,200FFF08,extended,AC810178
+patch=1,EE,200FFF04,extended,8C640008
+patch=1,EE,20201AC0,extended,0803FFC0
+patch=1,EE,200FFF1C,extended,080806B1
+
+[19 Ojos de Cíclope]
+description=19 Ojos de Cíclope
+author=God of War Colleccion
+patch=1,EE,0033527C,extended,00000013
+
+[Tener todos los ojos de Gorgona]
+description=Tener todos los ojos de Gorgona
+author=God of War Colleccion
+patch=1,EE,00335276,extended,00000012
+
+[Ira infinita de los titanes]
+description=IIra infinita de los titanes
+author=God of War Colleccion
+patch=1,EE,20335248,extended,42C80000
+
+[Magia infinita]
+description=Magia infinita
+author=God of War Colleccion
+patch=1,EE,20335240,extended,43480000
+
+[Consigue todas las plumas de Fénix]
+description=Consigue todas las plumas de Fénix
+author=God of War Colleccion
+patch=1,EE,00335277,extended,00000012
+
+[Tener toda la magia y los movimientos]
+description=Tener toda la magia y los movimientos
+author=God of War Colleccion
+patch=1,EE,20335234,extended,FFFFFFFF
+
+[Desbloquea todos los movimientos, potenciadores y urnas.]
+description=Desbloquea todos los movimientos, potenciadores y urnas.
+author=God of War Colleccion
+patch=1,EE,20335234,extended,FFFFFFFF
+
+[Orbes rojos al máximo/infinitos]
+description=Orbes rojos al máximo/infinitos
+author=God of War Colleccion
+patch=1,EE,20335250,extended,000F423F
+
+[Desbloquea todos los tesoros]
+description=Desbloquea todos los tesoros
+author=God of War Colleccion
+patch=1,EE,102D8A4C,extended,0000FFFF
+
+[Desbloquea todos los desafíos]
+description=Desbloquea todos los desafíos
+author=God of War Colleccion
+patch=1,EE,206F3960,extended,00000007
+
+[Todas las urnas]
+description=Todas las urnas
+author=God of War Colleccion
+patch=1,EE,00335236,extended,000000FC
+
+[Desbloquea todas las armas, magias, reliquias, movimientos y urnas.]
+description=Desbloquea todas las armas, magias, reliquias, movimientos y urnas.
+author=God of War Colleccion
+patch=1,EE,202D8044,extended,00010000
+patch=1,EE,20335234,extended,FFFFFFFF
+
+[Sin muertes totales]
+description=Sin muertes totales
+author=God of War Colleccion
+patch=1,EE,2036AAC8,extended,00000000
+
+[Sin paradas totales]
+description=Sin paradas totales
+author=God of War Colleccion
+patch=1,EE,2036AACC,extended,00000000
+
+[Máximas bajas brutales]
+description=Máximas bajas brutales
+author=God of War Colleccion
+patch=1,EE,2036AB0C,extended,3B9AC9FF
+
+[Combinación Máx. Máximo]
+description=Combinación Máx. Máximo
+author=God of War Colleccion
+patch=1,EE,2036AAF4,extended,3B9AC9FF
+
+[Máximas muertes desmenbradas]
+description=Máximas muertes desmenbradas
+author=God of War Colleccion
+patch=1,EE,2036AB14,extended,3B9AC9FF
+
+[Máximo de orbes rojos recolectados]
+description=Máximo de orbes rojos recolectados
+author=God of War Colleccion
+patch=1,EE,2036AAD8,extended,3B9AC9FF
+
+[Max Shatter Kills]
+description=Max Shatter Kills
+author=God of War Colleccion
+patch=1,EE,2036AB18,extended,3B9AC9FF
+

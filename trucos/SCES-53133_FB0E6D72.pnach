@@ -2,9 +2,8 @@ gametitle=God of War (PAL-M) (SCES-53133) FB0E6D72
 
 [Widescreen 16:9]
 gsaspectratio=16:9
-author=Some Chump and PeterDelta
-description=Corrects display cropping to 16:9.
-//Ported from SCUS-97399 by nemesis2000
+author=God of War Colleccion
+description=Corrige el recorte de la pantalla a 16:9.
 patch=1,EE,00169268,word,3c013f11
 patch=1,EE,0016926c,word,342135fc
 patch=1,EE,00169270,word,44812000
@@ -143,13 +142,214 @@ patch=1,EE,202FF9B0,extended,3FE38E39
 patch=1,EE,202FF9E8,extended,3FE38E39
 patch=1,EE,20331330,extended,3FE38E39
 
-//[480p Mode]
-//author=PeterDelta
-//description=SDTV 480p mode at start. Cannot be conditioned, FMV no sync, gameplay is fine
-//patch=1,EE,0029DACC,extended,00000001
-//patch=1,EE,2029D284,extended,3F555550
-
-[Skip Cutscenes]
-author=Ezedequias
-description=With Any Action Button
+[Omitir escenas cinemáticas]
+author=God of War Colleccion
+description=Con cualquier botón de acción
 patch=1,EE,0029D47C,byte,01
+
+[(Press: Select) Omitir FMV]
+description=(Press: Select) Omitir FMV
+patch=1,EE,D02FFB1C,extended,0000FFFE
+patch=1,EE,20270B80,extended,24020001
+patch=1,EE,D02FFB1C,extended,0010FFFE
+patch=1,EE,20270B80,extended,8C620000
+
+[Salud infinita]
+description=Salud infinita.
+author=God of War Colleccion
+patch=1,EE,20764738,extended,42C80000
+
+[Activar toda la magia]
+description=Activar toda la magia
+author=God of War Colleccion
+patch=1,EE,10304DC2,extended,0000FFFF
+
+[Todos los ojos de gorgona]
+description=Todos los ojos de gorgona
+author=God of War Colleccion
+patch=1,EE,00304DBF,extended,00000018
+
+[Todas las plumas de Fénix]
+description=Todas las plumas de Fénix 
+author=God of War Colleccion
+patch=1,EE,00304DC0,extended,00000018
+
+[Todas las llaves de las Musas]
+description=Todas las llaves de las Musas
+author=God of War Colleccion
+patch=1,EE,00304DC1,extended,00000002
+
+[Magia infinita]
+description=Magia infinita
+author=God of War Colleccion
+patch=1,EE,20304D9C,extended,42C80000
+
+[Magia de recarga rápida]
+description=Magia de recarga rápida
+author=God of War Colleccion
+patch=1,EE,D0304D9C,extended,00000000
+patch=1,EE,20304D9C,extended,42C80000
+
+[Ira infinita de los dioses]
+description=Ira infinita de los dioses
+author=God of War Colleccion
+patch=1,EE,20304DA0,extended,42C80000
+
+[Ira de los dioses recarga rápida]
+description=Ira de los dioses recarga rápida
+author=God of War Colleccion
+patch=1,EE,D0304DA0,extended,00000000
+patch=1,EE,20304DA0,extended,42C80000
+
+[Max Orbs después de recoger algunos]
+description=Max Orbs después de recoger algunos
+author=God of War Colleccion
+patch=1,EE,201D713C,extended,2412270F
+
+[Máximo de golpes en combo]
+description=Máximo de golpes en combo
+author=God of War Colleccion
+patch=1,EE,2073E710,extended,0000270F
+
+[Desbloquea todos los trajes]
+description=Desbloquea todos los trajes
+author=God of War Colleccion
+patch=1,EE,0073E874,extended,00000005
+
+[Desbloquea el modo muy difícil]
+description=Desbloquea el modo muy difícil
+author=God of War Colleccion
+patch=1,EE,0073E878,extended,00000001
+
+[Conversión a pantalla panorámica a partir del hack NTSC]
+description=Conversión a pantalla panorámica a partir del hack NTSC
+author=God of War Colleccion
+patch=1,EE,20169268,extended,3c013f11
+patch=1,EE,2016926c,extended,342135fc
+patch=1,EE,20169270,extended,44812000
+patch=1,EE,20169274,extended,54620002
+patch=1,EE,20169278,extended,8c620008
+patch=1,EE,2016927c,extended,0000102d
+patch=1,EE,20169280,extended,1040000a
+patch=1,EE,20169284,extended,27a40030
+patch=1,EE,20169288,extended,c44000f8
+patch=1,EE,2016928c,extended,3c013f00
+patch=1,EE,20169290,extended,44816000
+patch=1,EE,20169294,extended,0c060f1e
+patch=1,EE,20169298,extended,460c0302
+patch=1,EE,2016929c,extended,c7a10030
+patch=1,EE,201692a0,extended,46010003
+patch=1,EE,201692a4,extended,10000002
+patch=1,EE,201692a8,extended,e600037c
+patch=1,EE,201692ac,extended,e604037c
+patch=1,EE,201692b0,extended,c601037c
+patch=1,EE,201692b4,extended,44800000
+patch=1,EE,201692b8,extended,46010034
+patch=1,EE,201692bc,extended,45030003
+patch=1,EE,201692c0,extended,c605037c
+patch=1,EE,201692c4,extended,e604037c
+patch=1,EE,201692c8,extended,c605037c
+patch=1,EE,201692cc,extended,3c020033
+patch=1,EE,201692d0,extended,3c013f40
+patch=1,EE,201692d4,extended,44810800
+patch=1,EE,201692d8,extended,c4421330
+patch=1,EE,201692dc,extended,46020842
+patch=1,EE,201692e0,extended,46012942
+patch=1,EE,201692e4,extended,e605037c
+patch=1,EE,201692e8,extended,c6010368
+patch=1,EE,201692ec,extended,26050100
+patch=1,EE,201692f0,extended,c6000370
+patch=1,EE,201692f4,extended,c6020378
+patch=1,EE,201692f8,extended,c604036c
+patch=1,EE,201692fc,extended,c6030374
+patch=1,EE,20169300,extended,46022882
+patch=1,EE,20169304,extended,46012101
+patch=1,EE,20169308,extended,460018c1
+patch=1,EE,2016930c,extended,c4411330
+patch=1,EE,20169310,extended,46010803
+patch=1,EE,20169314,extended,46041082
+patch=1,EE,20169318,extended,46030842
+patch=1,EE,2016931c,extended,46050003
+patch=1,EE,20169320,extended,46011083
+patch=1,EE,20169324,extended,e6020380
+patch=1,EE,20169328,extended,44030000
+patch=1,EE,2016932c,extended,48a30800
+patch=1,EE,20169330,extended,4be000ec
+patch=1,EE,20169334,extended,4be41b3c
+patch=1,EE,20169338,extended,3c01bf80
+patch=1,EE,2016933c,extended,44810000
+patch=1,EE,20169340,extended,4b012100
+patch=1,EE,20169344,extended,46020003
+patch=1,EE,20169348,extended,44070000
+patch=1,EE,2016934c,extended,48a70800
+patch=1,EE,20169350,extended,4be21b3c
+patch=1,EE,20169354,extended,4a811080
+patch=1,EE,20169358,extended,c6020384
+patch=1,EE,2016935c,extended,c6030388
+patch=1,EE,20169360,extended,46031040
+patch=1,EE,20169364,extended,46031001
+patch=1,EE,20169368,extended,46000843
+patch=1,EE,2016936c,extended,24040000
+patch=1,EE,20169370,extended,24060000
+patch=1,EE,20169374,extended,70861b89
+patch=1,EE,20169378,extended,46021000
+patch=1,EE,2016937c,extended,3c08bf80
+patch=1,EE,20169380,extended,46021881
+patch=1,EE,20169384,extended,46030002
+patch=1,EE,20169388,extended,44070800
+patch=1,EE,2016938c,extended,71071389
+patch=1,EE,20169390,extended,46020003
+patch=1,EE,20169394,extended,704314c8
+patch=1,EE,20169398,extended,7fa20040
+patch=1,EE,2016939c,extended,7fa20000
+patch=1,EE,201693a0,extended,0000402d
+patch=1,EE,201693a4,extended,44070000
+patch=1,EE,201693a8,extended,71071389
+patch=1,EE,201693ac,extended,fa040100
+patch=1,EE,201693b0,extended,704314c8
+patch=1,EE,201693b4,extended,7fa20050
+patch=1,EE,201693b8,extended,26040280
+patch=1,EE,201693bc,extended,7fa20010
+patch=1,EE,201693c0,extended,f8a20010
+patch=1,EE,201693c4,extended,7ba20040
+patch=1,EE,201693c8,extended,7ca20020
+patch=1,EE,201693cc,extended,7ba20050
+patch=1,EE,201693d0,extended,7ca20030
+patch=1,EE,201693d4,extended,8e08037c
+patch=1,EE,201693d8,extended,48a80800
+patch=1,EE,201693dc,extended,4be41b3c
+patch=1,EE,201693e0,extended,4b012100
+patch=1,EE,201693e4,extended,c6000380
+patch=1,EE,201693e8,extended,46000007
+patch=1,EE,201693ec,extended,44050000
+patch=1,EE,201693f0,extended,48a50800
+patch=1,EE,201693f4,extended,4be21b3c
+patch=1,EE,201693f8,extended,4a811080
+patch=1,EE,201693fc,extended,c6010384
+patch=1,EE,20169400,extended,c6030388
+patch=1,EE,20169404,extended,46010880
+patch=1,EE,20169408,extended,46011801
+patch=1,EE,2016940c,extended,46031082
+patch=1,EE,20169410,extended,46020003
+patch=1,EE,20169414,extended,44070000
+patch=1,EE,20169418,extended,48a70800
+patch=1,EE,2016941c,extended,4a2118c0
+patch=1,EE,20169420,extended,46030840
+patch=1,EE,20169424,extended,46000847
+patch=1,EE,20169428,extended,46020843
+patch=1,EE,2016942c,extended,44080800
+patch=1,EE,20169430,extended,3c07bf80
+patch=1,EE,20169434,extended,71071389
+patch=1,EE,20169438,extended,dfbf0070
+patch=1,EE,2016943c,extended,fa040280
+patch=1,EE,20169440,extended,704314c8
+patch=1,EE,20169444,extended,7fa20060
+patch=1,EE,20169448,extended,7fa20020
+patch=1,EE,2016944c,extended,f8820010
+patch=1,EE,20169450,extended,f8830020
+patch=1,EE,20169454,extended,7bb00080
+patch=1,EE,20169458,extended,7ba20060
+patch=1,EE,2016945c,extended,7c820030
+patch=1,EE,20169460,extended,03e00008
+patch=1,EE,20169464,extended,27bd0090
+patch=1,EE,2112222c,extended,00000000
